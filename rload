@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sudo ./uload
+sudo ./build
+sudo ./load

@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ ! -d ".git" ]; then
+    echo "We have detected that you have downloaded SKRXHOOK-master.zip from the GitHub website. This is the WRONG way to download SKRXHOOK. Please download SKRXHOOK with the command 'git clone --recursive https://github.com/xSkyeX/SKRXHOOK.git'"
+    exit
+else
+	git pull
+	git submodule update --recursive --remote
+	git pull --recurse-submodules
+	./build
+fi

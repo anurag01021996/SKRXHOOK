@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ cmake . && make -j$(grep "^processor" /proc/cpuinfo | wc -l) "$@" && strip -s libSKRXHOOK.so
