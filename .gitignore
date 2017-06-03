@@ -1,0 +1,12 @@
+*.o
+*.so
+.vscode/
+.vs/
+.idea/
+cmake-build-debug
+SKRXHOOK.cbp
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+/Debug/
